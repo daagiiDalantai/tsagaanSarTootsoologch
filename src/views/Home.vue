@@ -1,18 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <input type="number" @change="changeYear" v-model="year">
+    {{res}}
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import calculateNewYear from '../helper'
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+  },
+  data () {
+    return {
+      year: 2021,
+      res: {}
+    }
+  },
+  created () {
+    this.res = calculateNewYear(this.year)
+  },
+  methods: {
+    changeYear () {
+      this.res = calculateNewYear(this.year)
+    }
   }
 }
 </script>
