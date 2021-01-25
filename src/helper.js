@@ -243,12 +243,12 @@ function calculateNewYear (y) {
   return {
     Жаран: att.cycle,
     Жил: (att.elcor + ' ' + att.animal),
-    'Жилийн мэнгэ': Numbern[att.number - 1] + ' ' + att.colour9,
-    'Шинийн нэгэн': y + '/' + Roman12[g.month - 1] + '/' + ((g.day < 10) ? '0' : '') + g.day + ' ' + Dlong[a.day],
-    'Өдрийн өнгө': a.elcor + ' ' + Animal[a.animal - 1],
-    'Өдрийн мэнгэ': Numbern[a.number - 1] + ' ' + a.colour9,
+    Жилийн_мэнгэ: Numbern[att.number - 1] + ' ' + att.colour9,
+    Шинийн_нэгэн: y + '/' + Roman12[g.month - 1] + '/' + ((g.day < 10) ? '0' : '') + g.day + ' ' + Dlong[a.day],
+    Өдрийн_өнгө: a.elcor + ' ' + Animal[a.animal - 1],
+    Өдрийн_мэнгэ: Numbern[a.number - 1] + ' ' + a.colour9,
     Суудал: Element8[a.trigram - 1],
-    'Битүүний сар': Roman12[sd.getUTCMonth()] + '/' + ((sd.getUTCDate() <= 9) ? '0' : '') + sd.getUTCDate() + ' - ' + ((sd.getUTCHours() <= 9) ? '0' : '') + sd.getUTCHours() + 'ц ' + ((sd.getUTCMinutes() <= 9) ? '0' : '') + sd.getUTCMinutes() + 'м'
+    Битүүний_сар: Roman12[sd.getUTCMonth()] + '/' + ((sd.getUTCDate() <= 9) ? '0' : '') + sd.getUTCDate() + ' - ' + ((sd.getUTCHours() <= 9) ? '0' : '') + sd.getUTCHours() + 'ц ' + ((sd.getUTCMinutes() <= 9) ? '0' : '') + sd.getUTCMinutes() + 'м'
   }
 }
 module.exports = calculateNewYear

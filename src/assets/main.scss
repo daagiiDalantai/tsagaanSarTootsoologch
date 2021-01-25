@@ -1,0 +1,26 @@
+.home{
+    padding: 10%;
+    .center-body{
+        background: rgba(black, 0.5);
+        padding: 20px;
+        border-radius: 20px;
+        input{
+            text-align: center;
+            background-color: #ccc;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 40px;
+            background: center;
+        }
+        .text-style{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    }
+}
